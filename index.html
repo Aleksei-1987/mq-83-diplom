@@ -11,8 +11,8 @@
 <body>
     <div class="popup hidden">
         <div class="popup__content">
-            <h2 class="news__title trends__title"><a href="#" class="news__title-link">ваш фидбек</a></h2>
-            <form action="" class="feedback">
+            <h2 class="news__title news__title-popup trends__title "><a href="#" class="news__title-link">ваш фидбек</a></h2>
+            <form action="#" class="feedback">
                 <fieldset>
                     <legend class="feedback__select-title">Как часто вы заходите на сайт?</legend>
                     <div class="select__wrapper">
@@ -33,8 +33,9 @@
                 </fieldset>
                 <fieldset>
                     <legend class="popup__textarea-title">Расскажите, какой контент вы хотели бы видеть
-                    на нашем сайте?</label>   
-                    <textarea class="popup__textarea" name="textarea" id="textarea" placeholder="Может больше рецептов?"></textarea>
+                        на нашем сайте?</legend>
+                    <textarea class="popup__textarea" name="textarea" id="textarea"
+                        placeholder="Может больше рецептов?"></textarea>
                 </fieldset>
                 <button class="feedback__btn" type="submit">отправить</button>
             </form>
@@ -261,14 +262,14 @@
                         </div>
                     </div>
                 </div>
-                <form action="" class="search__posts">
+                <form action="#" class="search__posts">
                     <input name="search" placeholder="Найти..." type="search" class="search__text">
                     <button type="submit" class="search__btn"></button>
                 </form>
             </section>
             <section class="sections newsletter">
                 <h3 class="section__title">рассылка</h3>
-                <form action="" class="newsletter__mails">
+                <form action="#" class="newsletter__mails">
                     <input name="email" placeholder="Ваш email-адрес" type="email" class="newsletter__mail">
                     <button type="submit" class="newsletter__btn">подписаться</button>
                 </form>
@@ -310,9 +311,14 @@
             <h2 class="news__title trends__title"><a href="#" class="news__title-link">наши изделия</a></h2>
             <div class="product__cards">
                 <div class="product__card">
-                    <div class="product_card-img"><img src="images/img-desk/shop-item-desk1.jpg" alt="подушки на диван"
-                            class="card__image">
-                    </div>
+                    <picture class="product_card-img">
+                        <source srcset="images/img-mobile/shop-item-mobile1.jpg", media="(max-width: 641px)">
+                        <source srcset="images/img-tablet/shop-item-tablet1.jpg", media="(max-width: 1199px)">
+                        <source srcset="images/img-desk/shop-item-desk1.jpg", media="(min-width: 1200px)">
+                        <img class="card__image"
+                            src="images/img-desk/shop-item-desk1.jpg" 
+                            alt="подушки на диван">
+                    </picture>   
                     <div class="product_card-content">
                         <h2 class="news__title"><a href="#" class="news__title-link">подушки на диван</a></h2>
                         <p class="card__text news__text">Набор из двух подушек с модными принтами. Видео о создании <a
@@ -327,9 +333,15 @@
                     </div>
                 </div>
                 <div class="product__card">
-                    <div class="product_card-img"><img src="images/img-desk/shop-item-desk2.jpg" alt="подушки на диван"
-                            class="card__image">
-                    </div>
+                    <picture class="product_card-img">
+                        <source srcset="images/img-mobile/shop-item-mobile2.jpg", media="(max-width: 641px)">
+                        <source srcset="images/img-tablet/shop-item-tablet2.jpg", media="(max-width: 1199px)">
+                        <source srcset="images/img-desk/shop-item-desk2.jpg", media="(min-width: 1200px)">
+                        <img class="card__image"
+                        src="images/img-desk/shop-item-desk2.jpg" 
+                        alt="подушки на диван"
+                            >
+                    </picture>
                     <div class="product_card-content">
                         <h2 class="news__title"><a href="#" class="news__title-link">кукла &#171;зайчик&#187;</a></h2>
                         <p class="card__text news__text">Интерьерная рукодельная кукла &#171;Зайчик&#187;, созданию
@@ -344,9 +356,14 @@
                     </div>
                 </div>
                 <div class="product__card">
-                    <div class="product_card-img"><img src="images/img-desk/shop-item-desk3.jpg" alt="подушки на диван"
-                            class="card__image">
-                    </div>
+                    <picture class="product_card-img">
+                        <source srcset="images/img-mobile/shop-item-mobile3.jpg", media="(max-width: 641px)">
+                        <source srcset="images/img-tablet/shop-item-tablet3.jpg", media="(max-width: 1199px)">
+                        <source srcset="images/img-desk/shop-item-desk3.jpg", media="(min-width: 1200px)">
+                        <img class="card__image"
+                        src="images/img-desk/shop-item-desk3.jpg" 
+                        alt="подушки на диван">
+                    </picture>
                     <div class="product_card-content">
                         <h2 class="news__title"><a href="#" class="news__title-link">шестиугольная рамка</a></h2>
                         <p class="card__text news__text">Необычная рамка для украшения дома из видео <a href="#"
@@ -385,7 +402,6 @@
                     </div>
                     <div class="social__icon">
                         <a href="#" class="icon__link">
-
                             <?xml version="1.0" encoding="iso-8859-1"?>
                             <svg class="icon__img" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310.05 310.05"
